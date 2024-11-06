@@ -6,15 +6,15 @@ namespace Tyuiu.TomilovDA.Sprint4.Task0.V14.Lib
     {
         public int GetSumOddArrEl(int[] array)
         {
-            int count = 0;
+            int sum = 0;
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] % 2 != 0)
                 {
-                    count++;
+                    sum += array[i];
                 }
             }
-            return count;
+            return sum;
         }
     }
 }
