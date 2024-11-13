@@ -10,7 +10,7 @@ namespace Tyuiu.TomilovDA.Sprint4.Task7.V2.Test
         {
             DataService dataService = new DataService();
             string num = "597643158942";
-            Assert.AreEqual(7, dataService.Calculate(3,4,num));
+            Assert.AreEqual(39, dataService.Calculate(3,4,num));
         }
     }
 }

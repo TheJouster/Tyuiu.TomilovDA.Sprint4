@@ -7,7 +7,7 @@ namespace Tyuiu.TomilovDA.Sprint4.Task7.V2.Lib
         public int Calculate(int n, int m, string value)
         {
             int[,] matrix = new int[n, m];
-            int count = 0;
+            int sum = 0;
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
@@ -15,11 +15,11 @@ namespace Tyuiu.TomilovDA.Sprint4.Task7.V2.Lib
                     matrix[i,j] = int.Parse(value.Substring((i * 4) + j,1));
                     if (matrix[i, j] % 2 != 0)
                     {
-                        count++;
+                        sum += matrix[i, j];
                     }
                 }
             }
-            return count;
+            return sum;
         }
     }
 }
